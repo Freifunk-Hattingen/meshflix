@@ -1,0 +1,99 @@
+{
+  "dataPath": [
+    "http://map.ff-en.de/data/en/",
+    "http://map.ff-en.de/data/spr/",
+    "http://map.ff-en.de/data/hat/",
+    "http://map.ff-en.de/data/wit/"
+    ],
+  "siteName": "Freifunk im Ennepe-Ruhr-Kreis e.V.",
+  "mapSigmaScale": 0.5,
+  "showContact": false,
+  "maxAge": 6,
+  "mapLayers": [
+    { "name": "MapQuest (OSM)",
+      "url": "https://otile{s}-s.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
+      "config": {
+        "subdomains": "1234",
+        "type": "osm",
+        "attribution": "Tiles &copy; <a href=\"https://www.mapquest.com/\" target=\"_blank\">MapQuest</a>, Data CC-BY-SA OpenStreetMap",
+        "maxZoom": 18
+     }
+    },
+    {
+     "name": "OpenStreetMap (DE)",
+      "url": "http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png",
+      "config": {
+      "attribution": "Tiles &copy; <a href=\"http://www.openstreetmap.org/copyright/\">OpenStreetMap</a>, OpenStreetMap DE",
+      "maxZoom": 18
+     }
+    },
+    {
+     "name": "Esri World Imagery",
+      "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "config": {
+      "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+      "maxZoom": 18
+     }
+    },
+    {
+     "name": "CartoDB (DarkMatter)",
+      "url": "http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+      "config": {
+      "subdomains": "abcd",
+      "attribution": "Tiles &copy; <a href=\"http://www.openstreetmap.org/copyright/\">OpenStreetMap</a> &copy; <a href=\"http://cartodb.com/attributions/\">CartoDB</a>",
+      "maxZoom": 18
+     }
+    },
+    {
+     "name": "Stamen (TonerLite)",
+      "url": "http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png",
+      "config": {
+      "subdomains": "abcd",
+      "attribution": "Map tiles by <a href=\"http://stamen.com/\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0/\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"http://www.openstreetmap.org/copyright/\">OpenStreetMap</a>",
+      "maxZoom": 18
+     }
+    },
+    {
+     "name": "MtbMap (Profil)",
+      "url": "http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png",
+      "config": {
+      "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright/\">OpenStreetMap</a> &amp; USGS",
+      "maxZoom": 18
+     }
+    },
+    {
+     "name": "OpenTopoMap (Profil)",
+      "url": "http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+      "config": {
+      "attribution": "Map data: &copy; <a href=\"http://www.openstreetmap.org/copyright/\">OpenStreetMap</a>, <a href=\"http://viewfinderpanoramas.org/\">SRTM</a> | Map style: &copy; <a href=\"https://opentopomap.org/\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
+      "maxZoom": 16
+     }
+    }
+  ],
+  "nodeInfos": [
+    { "name": "Clientstatistik",
+      "href": "http://www.freifunk-en.de",
+      "grafana": "http://xxxx.xx/dashboard-solo/db/ff-router?panelId=1&fullscreen&var-clients=ffnode_{NODE_ID}_clients&theme=light",
+      "caption": "Clients"
+    },
+    { "name": "Datendurchsatz",
+      "href": "http://www.freifunk-en.de",
+      "grafana": "http://xxxx.xx/dashboard-solo/db/ff-router?panelId=2&fullscreen&var-traffic=ffnode_{NODE_ID}_traffic&theme=light",
+      "caption": "Durchsatz"
+    }
+  ],
+  "globalInfos": [
+    { "name": "Clientstatistik EN-Kreis",
+      "href": "http://www.freifunk-en.de",
+      "grafana": "http://xxxx.xx/dashboard-solo/db/ff-stats?panelId=16&fullscreen&theme=light",
+      "caption": "Soon(tm)"
+    }
+  ],
+  "siteNames": [
+    { "site": "ffen", "name": "Ennepe-Ruhr-Kreis" },
+    { "site": "ffspr", "name": "Sprockhoevel" },
+    { "site": "ffwit", "name": "Witten" },
+    { "site": "ffhat", "name": "Hattingen" },
+    { "site": "ffrefugee", "name": "Refugees" }
+  ]
+}
