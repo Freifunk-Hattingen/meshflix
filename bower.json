@@ -1,5 +1,5 @@
 {
-  "name": "meshviewer",
+  "name": "meshflix",
   "ignore": [
     "node_modules",
     "bower_components",
@@ -28,8 +28,9 @@
     "jshashes": "~1.0.5"
   },
   "authors": [
-    "Nils Schneider <nils@nilsschneider.net>"
+    "Nils Schneider <nils@nilsschneider.net>",
+    "Matthias Fehl <mattes@air-raid.de>"
   ],
-  "license": "GPL3",
+  "license": "AGPL3",
   "private": true
 }
