@@ -82,6 +82,13 @@
       "caption": "Durchsatz"
     }
   ],
+  "nodeLinks": [
+    { "name": "Linkqualität - 5min Durchschnitt",
+      "href": "http://www.freifunk-en.de",
+      "grafana": "http://xxxx.xx/graph/dashboard-solo/db/freifunk-en-router-statistiken-node_id?var-node_id={NODE_ID}&var-neigh_id={NEIGH_ID}&panelId=9&theme=light",
+      "caption": "LinkTQ"
+    }
+  ],
   "globalInfos": [
     { "name": "Clientstatistik EN-Kreis",
       "href": "http://www.freifunk-en.de",
